@@ -4,27 +4,40 @@ import random
 
 def dice():
     # Write some code that will generate two random numbers up to 6 and add them together
-    rel1 = random.randint(0, 6)
-    rel2 = random.randint(0, 6)
-    ans = str(rel1) + str(rel2)
-    print(ans)
-    return()
+    rel1 = random.randint(1, 7)
+    rel2 = random.randint(1, 7)
+    ans = rel1 + rel2
+    return (ans)
 
 
 def main():
-    #= input("Press enter to throw the dice")
-    points = 0
-    rel1 = random.randint(0, 6)
-    rel2 = random.randint(0, 6)
-    ans = rel1 + rel2
-    if ans == (7, 11):
-        print("You rolled " + str(ans) + "You Win!")
-        points + 1
-        print(points)
-    elif ans == (2, 3, 12):
-        print("You rolled " + str(ans) + "You Lose!")
+    _ = input('Press enter to throw the dice')
+
+    score = 0
+
+    ans = dice()
+    if ans in (7, 11):
+        print("You rolled " + str(ans) + " You Win!")
+    elif ans in (2, 3, 12):
+        print("You rolled " + str(ans) + " You Lose!")
     else:
-        print(str(ans)
+        repeat = True
+        jeff = ans
+        print(str(ans))
+        while repeat:
+            score = score + 1
+            print("Your score is - ", score)
+            _ = input("Press enter to roll")
+            ans = dice()
+            print(ans)
+            if ans == (7):
+                print("You rolled " + str(ans) + " You Lose!")
+                print("You scored ", score, "points!")
+                repeat = False
+            elif ans == jeff:
+                print("You win!")
+                print("You scored ", score, "points!")
+                repeat = False
 
 
-#main()
+main()
