@@ -1,9 +1,14 @@
 # Imports go here
+import random
 
 
 def dice():
     # Write some code that will generate two random numbers up to 6 and add them together
-    return ()
+    rel1 = random.randint(0, 6)
+    rel2 = random.randint(0, 6)
+    ans = str(rel1) + str(rel2)
+    print(ans)
+    return()
 
 
 def main():
