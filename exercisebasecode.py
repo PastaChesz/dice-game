@@ -4,8 +4,8 @@ import random
 
 def dice():
     # Write some code that will generate two random numbers up to 6 and add them together
-    rel1 = random.randint(1, 7)
-    rel2 = random.randint(1, 7)
+    rel1 = random.randint(1, 6)
+    rel2 = random.randint(1, 6)
     ans = rel1 + rel2
     return (ans)
 
