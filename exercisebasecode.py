@@ -27,8 +27,4 @@ def main():
         print(str(ans)
 
 
-    # Write the game code here. You need to compare your dice result against the game rules to determine whether it
-    # has been won, lost or is ongoing.
-
-
-main()
+#main()
