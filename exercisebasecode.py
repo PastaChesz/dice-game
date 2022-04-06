@@ -1,4 +1,4 @@
-import random
+# Imports go here
 
 
 def dice():
