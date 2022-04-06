@@ -12,7 +12,21 @@ def dice():
 
 
 def main():
-    _ = input("Press enter to throw the dice")
+    #= input("Press enter to throw the dice")
+    points = 0
+    rel1 = random.randint(0, 6)
+    rel2 = random.randint(0, 6)
+    ans = rel1 + rel2
+    if ans == (7, 11):
+        print("You rolled " + str(ans) + "You Win!")
+        points + 1
+        print(points)
+    elif ans == (2, 3, 12):
+        print("You rolled " + str(ans) + "You Lose!")
+    else:
+        print(str(ans)
+
+
     # Write the game code here. You need to compare your dice result against the game rules to determine whether it
     # has been won, lost or is ongoing.
 
